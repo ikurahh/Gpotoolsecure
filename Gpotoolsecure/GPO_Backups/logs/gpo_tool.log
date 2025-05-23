@@ -1,0 +1,25 @@
+2025-04-23 10:03:27,168 [INFO] Script started
+2025-04-23 10:03:28,681 [WARNING] Script blocked: administrator privileges required.
+2025-04-23 10:03:35,886 [INFO] Script started
+2025-04-23 10:03:37,318 [INFO] Exporting GPO to temp folder: C:\Users\haruki\Desktop\gpotoolsecure\dist\GPO_Backups\GPO_Backup_001_20250423_100337
+2025-04-23 10:03:37,320 [ERROR] Export failed: [WinError 2] The system cannot find the file specified
+2025-04-23 10:04:01,217 [INFO] Script started
+2025-04-23 10:04:02,219 [WARNING] Script blocked: administrator privileges required.
+2025-04-23 10:04:06,150 [INFO] Script started
+2025-04-23 10:04:07,465 [INFO] Exporting GPO to temp folder: C:\Users\haruki\Desktop\gpotoolsecure\dist\GPO_Backups\GPO_Backup_001_20250423_100407
+2025-04-23 10:04:08,139 [INFO] Export successful: C:\Users\haruki\Desktop\gpotoolsecure\dist\GPO_Backups\GPO_Backup_001_20250423_100407.zip
+2025-04-23 10:04:08,140 [INFO] Hash saved to: C:\Users\haruki\Desktop\gpotoolsecure\dist\GPO_Backups\GPO_Backup_001_20250423_100407.hash
+2025-04-23 10:04:18,980 [INFO] Reapply selected: C:/Users/haruki/Desktop/gpotoolsecure/dist/GPO_Backups/GPO_Backup_001_20250423_100407.zip
+2025-04-23 10:04:18,980 [WARNING] SKIP_INTEGRITY is enabled. Hash verification skipped.
+2025-04-23 10:04:19,272 [INFO] Reapply successful from: C:/Users/haruki/Desktop/gpotoolsecure/dist/GPO_Backups/GPO_Backup_001_20250423_100407.zip
+2025-04-23 15:56:18,776 [INFO] Script started
+2025-04-23 15:56:20,786 [WARNING] Script blocked: administrator privileges required.
+2025-04-23 15:56:27,858 [INFO] Script started
+2025-04-23 15:56:30,157 [INFO] Exporting GPO to temp folder: C:\Users\haruki\Desktop\gpotoolsecure\dist\GPO_Backups\GPO_Backup_002_20250423_155630
+2025-04-23 15:56:31,389 [INFO] Export successful: C:\Users\haruki\Desktop\gpotoolsecure\dist\GPO_Backups\GPO_Backup_002_20250423_155630.zip
+2025-04-23 15:56:31,389 [INFO] Hash saved to: C:\Users\haruki\Desktop\gpotoolsecure\dist\GPO_Backups\GPO_Backup_002_20250423_155630.hash
+2025-04-25 15:24:22,558 [INFO] Script started
+2025-04-25 15:24:23,870 [WARNING] Script blocked: administrator privileges required.
+2025-04-25 15:24:27,596 [INFO] Script started
+2025-05-05 15:34:55,807 [INFO] Script started
+2025-05-05 15:34:57,694 [WARNING] Script blocked: administrator privileges required.
