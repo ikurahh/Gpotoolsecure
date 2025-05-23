@@ -122,6 +122,77 @@ GPO_Backups/
   - Keeps last 5 logs
 
 ---
+## 🔐 Security Features
+
+### 1. Administrator Privilege Enforcement
+
+```python
+if not is_admin():
+    show_error_popup("Please run as administrator.")
+    sys.exit(1)
+```
+
+- Ensures script only runs with elevated privileges.
+
+### 2. File Integrity Verification (Hashing)
+
+```python
+def compute_file_hash(path):
+    ...
+with open(hash_name, "w") as hf:
+    hf.write(hash_val)
+```
+
+- Verifies .zip integrity with stored SHA-256 hashes.
+
+### 3. Optional Integrity Bypass for Development
+
+```python
+SKIP_INTEGRITY = True
+```
+
+- Allows skipping hash check for testing.
+
+### 4. Hash File Protection
+
+```python
+subprocess.run(["attrib", "+R", hash_name])
+```
+
+- Makes `.hash` file read-only.
+
+### 5. Logging with Rotating File Stream (RFS)
+
+```python
+handler = RotatingFileHandler(log_file, maxBytes=500000, backupCount=5)
+```
+
+- Logs activity like exports, failures, and verification.
+
+### 6. Safe Temporary Extraction
+
+```python
+temp_extract = os.path.join(BACKUP_DIR, "temp_import")
+...
+shutil.rmtree(temp_extract)
+```
+
+- Cleans up after reapplying policies.
+
+---
+
+## 🛡️ Summary: Why These Security Features Matter
+
+| Security Feature           | Risk Mitigated                  | Value Added                           |
+|----------------------------|----------------------------------|----------------------------------------|
+| Admin Privileges Required  | Unauthorized execution          | Ensures script control by trusted users |
+| Hash Integrity Check       | Tampered backups                | Assures policy authenticity            |
+| Read-only Hash Files       | Accidental/malicious changes    | Preserves trusted baselines            |
+| Secure Logging (RFS)       | No visibility/troubleshooting   | Full auditability                      |
+| Cleanup of Temp Files      | File residue or reuse           | Cleaner and safer environment          |
+| Dev-mode Toggle            | Developer obstacles             | Safer testing without compromising prod |
+
+---
 
 ## 🧯 Safety Notes
 
