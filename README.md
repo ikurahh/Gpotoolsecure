@@ -2,7 +2,7 @@
 
 ## 🔐 What is This Tool?
 
-The **GPO Secure Tool** is a Python-based utility to **export** and **reapply** Group Policy Objects (GPOs) securely on a Windows machine. It uses Microsoft's `lgpo.exe` to perform GPO operations and stores backups in an organized and integrity-checked format.
+The **GPO Secure Tool** is a Python-based utility to **export** and **reapply** Group Policy Objects (GPOs) securely on a Windows machine. It uses Microsoft's `lgpo.exe` to perform GPO operations and stores backups in an organized and integrity-checked format.I have also added security features being a cybersecurity student which included hash integrity file checks using SHA256 preventing tampering , a ligthweight logging system using rotating file system , as well as set read- only permissons to logs and also admin only right to run this script and last but not least developer modification codes.
 
 ---
 
